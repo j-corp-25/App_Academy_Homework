@@ -4,7 +4,36 @@ In this practice, you will implement your own abstract data types!
 Exercise 1: Stack
 Let's write a Stack class. To do this, use the following framework:
 
-class Stack```
+class Stack
+```ruby
+class Stack
+  def initialize(arr)
+  @array = arr
+    # create ivar to store stack here!
+  end
+
+  def push(el)
+  @array << ele
+  end
+  
+    # adds an element to the stack
+
+  def pop
+  @array.pop
+    # removes one element from the stack
+  end
+
+  def peek
+  @array.unshift
+    # returns, but doesn't remove, the top element in the stack
+  end
+end
+
+test = Stack.new
+
+```
+
+
   def initialize
     # create ivar to store stack here!
   end
