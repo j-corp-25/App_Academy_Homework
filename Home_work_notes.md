@@ -18,6 +18,5 @@ Tic-Tac-Toe with a tree
 
 How do you traverse a tree.
 
-BFF
-DFS
-
+BFF - Breadth first search
+DFS - Depth first search
