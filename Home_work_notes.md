@@ -10,3 +10,14 @@ A binary tree has at most one parent but it can have no parent. The beginning ha
 There are Binary,Ternary,N-Ary,and poly tree
 
 The bottom of three are calledthe leaves. you also have depth and height.
+
+Trees are really good for certain problems.
+
+
+Tic-Tac-Toe with a tree
+
+How do you traverse a tree.
+
+BFF
+DFS
+
