@@ -1,8 +1,10 @@
-What's Your Style?
+# What's Your Style?
+
 Consider each of the following questions separately and circle the one letter (a, b, c, or d) that corresponds to the description that best fits you. If you have trouble selecting only one answer, ask yourself which response, at work, would be the most natural or likely for you to make.
 After scoring your responses, you will notice you are not just one style, and neither is anyone else so you  have to adjust your communication accordingly. It is important not to label someone because we are all  different and complex so no one fits into a box. This tool, as with other tools, is meant to be a guide and  to give you ideas but the best learning is through trial, error, reflection and trying again.
 Self- evaluation questionnaire
 There are no right answers to these questions, so base your response on how you are today, not how you think you should be or would like to be in the future.
+
 1. When talking to a customer or co-worker ...
 a. I maintain eye contact the whole time.
 b. I alternate between looking at the person and looking down.
