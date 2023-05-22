@@ -74,6 +74,7 @@ Goodbye, Jamis Buck!
 Inheritance and Code Reuse
 Inheritance has allowed us to avoid duplicating the methods that are common to User and SuperUser. Here's another example:
 
+```ruby
 class Magazine
   attr_accessor :editor
 end
@@ -81,7 +82,11 @@ end
 class Book
   attr_accessor :editor
 end
+```
+
 We see code being duplicated: a bad sign. We can use inheritance to solve this problem like so:
+
+```ruby
 
 class Publication
   attr_accessor :editor
@@ -92,3 +97,73 @@ end
 
 class Book < Publication
 end
+```
+
+### In the example above we see how we saved extra time duplicating by just adding the methods that were in publication to Megazine class and Book class. That means that Magazine have access to setters and getters for editior class instances
+
+Calling a super method
+When overriding a method, it is common to call the original implementation. We can call the superclass's implementation of any method using the special super keyword. There are two major ways in which super is called. If super is called without any arguments, the arguments passed to the method will be implicitly passed on to the parent class's implementation.
+
+```ruby
+class Animal
+  def make_n_noises(n = 2)
+    n.times { print "Growl " }
+  end
+end
+
+class Liger < Animal
+  def make_n_noises(num = 4)
+    num.times { print "Roar " }
+    # here we'll call super without any arguments. This will pass on `num`
+    # implicitly to super. You can think of this call to super as:
+    # `super(num)`
+    super
+  end
+end
+
+Liger.new.make_n_noises(3) # => Roar Roar Roar Growl Growl Growl
+```
+
+```ruby
+
+class Dragons
+
+
+
+end
+```
+
+### When we are creating Objects we should use the name of the nouns as the class name: Lets say there is prompt saying.. Imagine a simulation of MINNOWS and SHARKS: each "turn", the MINNOWS *swim* away from the SHARK, and the SHARK *swims* after the closest MINNOWS
+
+#### We use the verbs as methods and the nouns as class names
+
+A Minnow and a Shark swim differently. They should both have a #swim method, but they should do different things.
+
+```ruby
+class Minnow
+  def swim
+    # swim away from any sharks
+  end
+end
+
+class Shark
+  def swim
+    # swim toward closest fish
+  end
+end
+```
+
+```ruby
+class Minnow
+  attr_reader :position
+
+  def initialize(initial_position)
+    # save the minnow's initial position
+    @position = initial_position
+  end
+
+  def swim
+    # swim away from any sharks; update @position
+  end
+end
+```
