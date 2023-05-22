@@ -29,3 +29,32 @@ class Salmon < Fish
     @name = name
   end
 end
+
+
+class Worker
+  def wage(num)
+  @wage = num
+  end
+end
+
+
+class Manager < Worker
+  def wage
+    50_000
+  end
+end
+
+class CEO < Worker
+  def wage
+    1_000_000
+  end
+end
+
+def total_salary(workers)
+  total = 0
+  workers.each do |worker|
+    # Don't know/care what kind of `Employee` (regular, Manager,
+    # or CEO) this is. We can treat them all the same.
+    total += worker.wage
+  end
+end

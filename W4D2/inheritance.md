@@ -176,3 +176,80 @@ end
 
 ### Rule of thumb is to keep a class under 100 lines
 
+### Dont duplicate methods when defining class, this is a big no no when creating classes. We have to use DRY
+
+> Bad code
+
+```ruby
+class Minnow
+  def eat
+    puts "eat eat eat"
+  end
+end
+
+class Shark
+  def eat
+    puts "eat eat eat"
+  end
+end
+
+```
+
+> Good Code
+
+```ruby
+class Fish
+  def eat
+    puts "eat eat eat"
+  end
+end
+
+class Minnow < Fish
+end
+
+class Shark < Fish
+end
+
+```
+
+### inheritance and Generic Code Because Minnow and Shark are both different types of Fish, we can write generic code that can process any kind of Fish, and it will work with both Minnows and Sharks. Here's an example with many types of employee
+
+```ruby
+class Employee
+  def wage
+    20_000
+  end
+end
+
+class Manager < Employee
+  def wage
+    50_000
+  end
+end
+
+class CEO < Manager
+  def wage
+    1_000_000
+  end
+end
+
+# calculate the total salary of many employees
+def total_salary(employees)
+  total = 0
+  employees.each do |employee|
+    # Don't know/care what kind of `Employee` (regular, Manager,
+    # or CEO) this is. We can treat them all the same.
+    total += employee.wage
+  end
+end
+```
+
+> A better example
+
+```ruby
+class Worker
+    def wage(num)
+    @wage = num
+    end
+end
+```
