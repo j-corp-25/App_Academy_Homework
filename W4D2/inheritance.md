@@ -167,3 +167,12 @@ class Minnow
   end
 end
 ```
+
+### For the classes above you can see that the SHARK CLASS is separated from the MINOW class. Each of them controls their own position which is called *state*. They are both swimming but they will eventually swim differently which is called *behaviour*
+
+### The whole point of this is that we can break down the problem into smaller subproblems. With these two classes we could do a Fisherman class or aquarium class
+
+### There is a tricky balance when creating classes. Each class should do one time. Dont create too many classes when they wont be needed
+
+### Rule of thumb is to keep a class under 100 lines
+
