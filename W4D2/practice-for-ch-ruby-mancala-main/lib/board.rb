@@ -34,9 +34,11 @@ class Board
     end
   end
 
+
+
   def make_move(start_pos, current_player_name)
-    @cups[0] = []
-    
+    @cup[start_pos] = []
+
 
 
   end
