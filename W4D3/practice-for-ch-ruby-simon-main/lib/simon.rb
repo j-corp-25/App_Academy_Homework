@@ -36,7 +36,7 @@ class Simon
   end
 
   def round_success_message
-    p "awesome, next sequence"
+    p "Awesome, next sequence"
   end
 
   def game_over_message
