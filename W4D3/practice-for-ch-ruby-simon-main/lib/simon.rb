@@ -10,13 +10,9 @@ class Simon
   end
 
   def play
-    take_turn unless game_over
-    game_over_message && reset_game
-
-
-
-
-
+    take_turn until game_over
+    game_over_message
+    reset_game
   end
 
   def take_turn
@@ -40,12 +36,16 @@ class Simon
   end
 
   def round_success_message
-    p ""
+    p "awesome, next sequence"
   end
 
   def game_over_message
+    p "Yikes, nice. Thank you, please. Come again"
   end
 
   def reset_game
+    @sequence_length = 1
+    game_over = false
+    @seq = []
   end
 end
