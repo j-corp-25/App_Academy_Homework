@@ -18,4 +18,4 @@ Any constant gets reduce to 1 no matter how big it is. In a situation of 3n + 1 
 
 ### Space complexity
 
-![Big_O](Users/jordycorporan/Desktop/Snippets/Big_O.png)
+![Big_O](http://www.redbubble.com/people/immortalloom/works/22929408-official-big-o-cheat-sheet-poster?p=poster&finish=semi_gloss&size=large)
