@@ -11,3 +11,11 @@
 Any constant gets reduce to 1 no matter how big it is. In a situation of 3n + 1 for the number of steps. you remove 3 and 1 just leaving  n.
 
 ## Your algo is as fast as your bottleneck(slowest)
+
+### Big-O describes the worst case runtime Asymtotically we dont care about the average or best case. We get more bang from our buck by testing the worst case
+
+> If we split the input by half or devide it by any number it is considered log of that n. If we divide the input size by 3 it would be O(logn).
+
+### Space complexity
+
+![Big_O](Users/jordycorporan/Desktop/Snippets/Big_O.png)
