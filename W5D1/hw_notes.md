@@ -71,3 +71,20 @@ MySQL
 Known for: being open-source, wide usage, cross-platform support, ease of use
 
 Used by: Twitter, Dropbox, Vine, 9GAG, Pinterest, Tumblr, Github
+
+Oracle
+Known for: reliability, enterprise scale
+
+Used by: LinkedIn, Netflix, Ebay, HealthExpense, iFactor
+
+MongoDB
+Known for: Document-oriented storage (NoSQL), being open source, high performance, ease of use, flexibility, easy maintenance
+
+Used by: Hootsuite, Uber, Foursquare
+
+Redis
+Known for: Performance, advanced key-value cache storage (NoSQL), easy deployment, being open source, speed
+
+Used by: Twitter, Instagram, 9GAG, Vine, Hootsuite, AirBnb, Uber, Medium
+
+
