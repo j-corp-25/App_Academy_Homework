@@ -337,6 +337,7 @@ ORDER BY
 Subqueries
 Life gets complicated when you make subqueries. Here's how I do it:
 
+```sql
 SELECT
   bands.*
 FROM
@@ -362,3 +363,30 @@ WHERE
     WHERE
       musicians.birth_yr > 1940
   )
+```
+
+NULL and Ternary Logic in SQL
+SQL uses ternary logic. This means that a conditional statement can evaluate to TRUE, FALSE, or NULL (unknown). Whaaaa? :open_mouth: And somehow NULL is still 'falsy'? Unfortunately, this won't be the only time you run into logic that defies intuition. Stay tuned for Javascript quirks.
+
+Asking if a NULL value = NULL will always produce FALSE. This is because NULL was derived to represent an unknown value. How can we know if two unknowns are the same? We can't. Given that this sort of comparison doesn't yield any useful information, always use IS NULL or IS NOT NULL in place of the traditional (= or != / <>) comparisons.
+
+1. General PostgreSQL CASE expression
+The following illustrates the general form of the CASE statement:
+
+```sql
+CASE
+      WHEN condition_1  THEN result_1
+      WHEN condition_2  THEN result_2
+      [WHEN ...]
+      [ELSE else_result]
+END
+```
+
+Code language: SQL (Structured Query Language) (sql)
+In this syntax, each condition (condition_1, condition_2…) is a boolean expression that returns either true or false.
+
+When a condition evaluates to false, the CASE expression evaluates the next condition from the top to bottom until it finds a condition that evaluates to true.
+
+If a condition evaluates to true, the CASE expression returns the corresponding result that follows the condition. For example, if the condition_2 evaluates to true, the CASE expression returns the result_2. Also, it immediately stops evaluating the next expression.
+
+In case all conditions evaluate to false, the CASE expression returns the result (else_result) that follows the ELSE keyword. If you omit the ELSE clause, the CASE expression returns NULL.
