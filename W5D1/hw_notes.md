@@ -395,6 +395,11 @@ If a condition evaluates to true, the CASE expression returns the corresponding 
 In case all conditions evaluate to false, the CASE expression returns the result (else_result) that follows the ELSE keyword. If you omit the ELSE clause, the CASE expression returns NULL.
 ostgreSQL COALESCE function syntax
 The syntax of the COALESCE function is as follows:
+
 ```sql
 COALESCE (argument_1, argument_2, …);
 ```
+
+## Useful Operators to reference
+
+![Clauses](/W5D1/Screenshot%202023-05-28%20at%2010.21.06%20AM.png)
