@@ -411,3 +411,7 @@ COALESCE (argument_1, argument_2, …);
 ## Solved Constraints problems
 
 ![SQL_Lesson_3](/W5D1/Screenshot%202023-05-28%20at%2011.28.59%20AM.png)
+
+## Using distinct and Order By
+
+![SQL_Lesson_4_Part_3](/W5D1/Screenshot%202023-05-28%20at%2012.28.58%20PM.png)
