@@ -304,3 +304,61 @@ JOIN
 JOIN
   users ON likes.user_id = users.id
 This query will give a list of user names and the posts they have liked.
+
+## Formatting SQL Code
+
+### Very Inportant
+
+SQL Conventions
+Different programmers use different SQL conventions, but in preparation for ActiveRecord and Rails, which have their own conventions, you should:
+
+Always name SQL tables snake_case and pluralized (e.g., musical_instruments, favorite_cats).
+If a musician belongs to a band, your musicians table will need to store a foreign key that refers to the id column in the bands table. The foreign key column should be named band_id.
+Always have a column named id, and use it as the primary key for a table.
+
+```sql
+SELECT
+  table_two.column_one,
+  table_two.column_two,
+  table_two.column_three
+FROM
+  table_one
+LEFT OUTER JOIN
+  table_two ON table_one.column_one = table_two.column_x
+WHERE
+  (table_one.column_three > table_two.column_y
+    AND another_condition IS NULL)
+GROUP BY
+  table_two.column_four
+ORDER BY
+  table_two.column_four
+```
+
+Subqueries
+Life gets complicated when you make subqueries. Here's how I do it:
+
+SELECT
+  bands.*
+FROM
+  bands
+JOIN (
+  SELECT
+    albums.*
+  FROM
+    albums
+  WHERE
+    album.type = "POP"
+  GROUP BY
+    album.band_id
+  HAVING
+    COUNT(*) > 3
+  ) AS pop_group_albums ON bands.id = pop_group_albums.band_id
+WHERE
+  band.leader_id IN (
+    SELECT
+      musicians.id
+    FROM
+      musicians
+    WHERE
+      musicians.birth_yr > 1940
+  )
