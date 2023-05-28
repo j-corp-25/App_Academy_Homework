@@ -403,3 +403,7 @@ COALESCE (argument_1, argument_2, …);
 ## Useful Operators to reference
 
 ![Clauses](/W5D1/Screenshot%202023-05-28%20at%2010.21.06%20AM.png)
+
+## Useful Constraints to reference
+
+![Clauses](/W5D1/Screenshot%202023-05-28%20at%2010.57.53%20AM.png)
