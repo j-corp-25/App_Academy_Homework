@@ -407,3 +407,7 @@ COALESCE (argument_1, argument_2, …);
 ## Useful Constraints to reference
 
 ![Clauses](/W5D1/Screenshot%202023-05-28%20at%2010.57.53%20AM.png)
+
+## Solved Constraints problems
+
+![SQL_Lesson_3](/W5D1/Screenshot%202023-05-28%20at%2011.28.59%20AM.png)
