@@ -176,7 +176,7 @@ Below are brief descriptions of each operator's syntactical signature followed b
 
 SELECT
 Structure:
-
+```sql
 SELECT
   one or more columns (or all columns with *)
 FROM
@@ -260,9 +260,12 @@ DELETE FROM
 WHERE
   customer_id = 666;
 Schema Definitions
+```
+
 Before basic querying can take place, you need to define your database schema. There are three operators that SQL provides to manipulate a database schema:
 
 CREATE TABLE
+
 ALTER TABLE
 DROP TABLE
 Here's an example of creating a users table (we'll break it down shortly):
@@ -390,3 +393,8 @@ When a condition evaluates to false, the CASE expression evaluates the next cond
 If a condition evaluates to true, the CASE expression returns the corresponding result that follows the condition. For example, if the condition_2 evaluates to true, the CASE expression returns the result_2. Also, it immediately stops evaluating the next expression.
 
 In case all conditions evaluate to false, the CASE expression returns the result (else_result) that follows the ELSE keyword. If you omit the ELSE clause, the CASE expression returns NULL.
+ostgreSQL COALESCE function syntax
+The syntax of the COALESCE function is as follows:
+```sql
+COALESCE (argument_1, argument_2, …);
+```
