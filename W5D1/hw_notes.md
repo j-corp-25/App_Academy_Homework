@@ -415,3 +415,7 @@ COALESCE (argument_1, argument_2, …);
 ## Using distinct and Order By
 
 ![SQL_Lesson_4_Part_3](/W5D1/Screenshot%202023-05-28%20at%2012.28.58%20PM.png)
+
+## Using more offset and combining clauses
+
+![SQL_Lesson_4](/W5D1/Screenshot%202023-05-28%20at%202.48.02%20PM.png)
