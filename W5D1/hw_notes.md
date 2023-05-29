@@ -419,3 +419,7 @@ COALESCE (argument_1, argument_2, …);
 ## Using more offset and combining clauses
 
 ![SQL_Lesson_4](/W5D1/Screenshot%202023-05-28%20at%202.48.02%20PM.png)
+
+## Answer to lesson 6
+
+![SQL_Lesson_6]
