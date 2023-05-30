@@ -423,3 +423,5 @@ COALESCE (argument_1, argument_2, …);
 ## Answer to lesson 6
 
 ![SQL_Lesson_6]
+
+cant compare things to null
