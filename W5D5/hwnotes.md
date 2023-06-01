@@ -178,3 +178,23 @@ class CreateCourses < ActiveRecord::Migration[7.0]
   add_index :courses [:instructor_id, :name], unique: true
 end
 ```
+
+## Dependent Destroy
+
+By adding dependent: :destroy it avoids the problems with using foreign keys in references when you delete them from seeds. This will cause issues when you delete a table that needs to be deleted first before another table gets deleted
+
+sample problem below:
+
+Consider a User model and a Post model with the following associations:
+
+```ruby
+class User < ApplicationRecord
+  has_many :posts,
+    foreign_key: :author_id
+end
+
+class Post < ApplicationRecord
+  belongs_to :author,
+    class_name: 'User'
+end
+```
