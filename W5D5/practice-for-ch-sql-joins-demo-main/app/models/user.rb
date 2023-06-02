@@ -32,7 +32,7 @@ class User < ApplicationRecord
   has_many :post_feedback, through: :posts, source: :comments
 
   def n_plus_one_post_comment_counts
-    posts = self.posts
+    posts = self.posts.includes(:comments)
     # SELECT *
     #   FROM posts
     #  WHERE posts.author_id = ?
@@ -135,7 +135,7 @@ class User < ApplicationRecord
     posts_with_counts = self
       .posts
       .select("posts.*, COUNT(*) AS comments_count") # more in a sec
-      .joins(:comments) # Use `left_outer_joins(:comments)` to include `Posts` 
+      .joins(:comments) # Use `left_outer_joins(:comments)` to include `Posts`
                         # with no `Comment`s
       .group("posts.id") # "comments.post_id" would be equivalent
     # in SQL to:
