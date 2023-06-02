@@ -198,3 +198,17 @@ class Post < ApplicationRecord
     class_name: 'User'
 end
 ```
+
+## Active Relation
+
+```ruby
+georges = User.where('first_name = ?', 'George')
+georges.where_values_hash
+# => {first_name: 'George'}
+
+george_harrisons = georges.where('last_name = ?', 'Harrison')
+george_harrisons.where_values_hash
+# => {first_name: 'George', last_name: 'Harrison'}
+
+p george_harrisons
+```
