@@ -212,3 +212,5 @@ george_harrisons.where_values_hash
 
 p george_harrisons
 ```
+
+## Active Record and Joins
