@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  GET 'silly', to: 'silly#fun#'
+  GET 'silly', to: 'silly#fun'
+
 end
