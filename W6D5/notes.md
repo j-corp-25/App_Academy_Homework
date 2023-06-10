@@ -82,6 +82,13 @@ There is a shorthand for this:
 ```
 
 ![BasicHashStructure](./hwsnips/Screenshot%202023-06-08%20at%206.38.06%20PM.png)
+![BasicHashStructure](./hwsnips/Screenshot%202023-06-08%20at%206.43.06%20PM.png)
+![BasicHashStructure](./hwsnips/Screenshot%202023-06-08%20at%206.43.41%20PM.png)
 
 
 
+
+
+
+
+![BasicHashStructure](./hwsnips/Screenshot%202023-06-08%20at%206.46.31%20PM.png)
