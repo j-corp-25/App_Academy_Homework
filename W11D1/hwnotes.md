@@ -78,3 +78,11 @@ function ChildComponent() {
 ```
 
 ## Refs Hooks
+
+Now with refs, they let a component hold information that is not used for rendering, like the DOM node or a timeout ID.
+
+The cool thing is that updatating a ref does not re-render your component. Refs are an "escape hatch" from the React paradigm. They are usefull when working with non-react systems
+
+
+- `useRef`declares a ref. You can hold any value in it, but most often it’s used to hold a DOM node.
+- `useImperativeHandle` lets you customize the ref exposed by your component. This is rarely used.
