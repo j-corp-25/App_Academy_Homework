@@ -1,6 +1,13 @@
+import React from "react";
+import NavLinks from "./components/navlinks";
+
+
 function App() {
   return (
-    <h1>Hello from App</h1>
+    <nav>
+      <h1> Welcome to the Jasmine Dragon </h1>
+      <NavLinks/>
+    </nav>
   );
 }
 
